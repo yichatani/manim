@@ -134,12 +134,12 @@ ORANGE: ManimColor = manim_config.colors.orange
 MANIM_COLORS: List[ManimColor] = list(manim_config.colors.values())
 
 # Abbreviated names for the "median" colors
-BLUE: ManimColor = BLUE_C
+BLUE: ManimColor = BLUE_D
 TEAL: ManimColor = TEAL_C
-GREEN: ManimColor = GREEN_C
+GREEN: ManimColor = GREEN_D
 YELLOW: ManimColor = YELLOW_C
 GOLD: ManimColor = GOLD_C
-RED: ManimColor = RED_C
+RED: ManimColor = RED_D
 MAROON: ManimColor = MAROON_C
 PURPLE: ManimColor = PURPLE_C
 GREY: ManimColor = GREY_C
