@@ -26,22 +26,26 @@ class MYLogo(Scene):
         # center_dot = Dot(arms.get_center(), color=BLACK, radius=0.05)
         # self.add(center_dot)
         self.add(arms)
-        arms.move_to(np.array([0., 0.18 * 3, 0.]))
+        arms.move_to(np.array([0., 0.
+                            #    0.18 * 3
+                               , 0.]))
        
         m = TexText(r"\texttt{M}").scale(12).set_color(BLACK)
         c = TexText(r"\texttt{C}").scale(12).set_color(BLACK)
 
-        m.move_to(1.6*LEFT*3)
+        m.move_to(1.45*LEFT*3)
         self.add(m)
 
         # c = TexText("C").scale(4).set_color(BLACK)
-        c.move_to(1.6*RIGHT*3)
+        c.move_to(1.35*RIGHT*3)
         self.add(c)
 
 
         for _ in range(3):
-            self.play(Rotate(arms, angle=120 * DEGREES, about_point=ORIGIN+np.array([0., 0.07*3, 0.])), run_time=2)
-            self.wait(0.2)
+            self.play(Rotate(arms, angle=120 * DEGREES, about_point=ORIGIN
+                             +np.array([0., 0.78/2, 0.]))
+                             , run_time=2)
+            self.wait(0.1)
 
         self.wait(1)
 
